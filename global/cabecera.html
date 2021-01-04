@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="./styles/estilos.css">
+		<link rel="stylesheet" href="./styles/bootstrap.min.css" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/d2775d5ad5.js" crossorigin="anonymous"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+
+		<script>
+				function generator() {
+					var x= Math.floor((Math.random()*6)+1);
+					console.log(x);
+					if(x == 1){
+						var intro = document.getElementById('header');
+						intro.className = 'header1';
+					}else if(x == 2){
+						var intro = document.getElementById('header');
+						intro.className = 'header2';
+						var nav = document.getElementById('nav');
+						nav.className = 'nav2 navbar';
+						var texto = document.getElementById('texto-principal');
+						texto.className = 'texto-principal2';
+					}else if(x == 3){
+						var intro = document.getElementById('header');
+						intro.className = 'header3';
+					}else if(x == 4){
+						var intro = document.getElementById('header');
+						intro.className = 'header4';
+					}else if(x == 5){
+						var intro = document.getElementById('header');
+						intro.className = 'header5';
+						var nav = document.getElementById('nav');
+						nav.className = 'nav2 navbar';
+						var texto = document.getElementById('texto-principal');
+						texto.className = 'texto-principal2';
+					}else if(x == 6){
+						var intro = document.getElementById('header');
+						intro.className = 'header6';
+					}
+					
+				}	
+		</script>
+	</head>
+
+	<body onload ="generator()" class="bg-dark">
+		<div class="padre">
+			<header id="header" class="header ">
+				<br>
+				<div class="menu margen-interno">
+					<!-- Logo  -->
+				<div class="logo">
+					<a href="#" class="navbar-brand">Logo Corporativo<i class="fas fa-industry"></i></a>
+				</div>
+				<!-- Navegacion  -->
+					<nav class="nav navbar" id="nav">
+						<a href="../pagina/index.php"><i class="fas fa-home"></i>Home</a>
+						
+						
+						<button class="btn btn-primary-outline navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent1"
+							aria-controls="navbarSupportedContent1"
+							aria-expanded="false"
+							aria-label="Toogle navigation">
+							<span ><i class="fas fa-industry"></i>Maquinados</span>
+						</button>
+						<br>
+						<div class="collapse  " id="navbarSupportedContent1">
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link" href="../pagina/maquinados.php"> Industriales</a></li>
+								<li class="nav-item"><a class="nav-link" href="../pagina/presicion.php">De Precisión</a></li>
+							</ul>
+						</div>
+						<button class="btn btn-primary-outline navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toogle navigation">
+							<span ><i class="fas fa-search-dollar"></i>Servicios</span>
+						</button>
+						<br>
+						<div class="collapse  " id="navbarSupportedContent">
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link" href="#">Reparacion</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Fabricacion</a></li>
+								<li class="nav-item"><a class="nav-link" href="../pagina/cnc.php">CNC</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">Diseño de piezas</a></li>
+								<li class="nav-item"><a class="nav-link" href="../pagina/torno.php">Taller de torno</a></li>
+							</ul>
+						</div>
+						<a href="#">Nosotros</a>
+						<a href="../pagina/correo.php"><i class="fas fa-comments-dollar"></i>Contactenos</a>
+						
+					
+					</nav>
+					<div class="social">Guadalajara, Jal.</div>
+
+					<div class="social">
+						<div ><a href="#"><i class="fab fa-whatsapp"></i></a></div>
+						<div ><a href="#"><i class="far fa-envelope"></i></a></div>
+						<div ><a href="#"><i class="fab fa-linkedin"></i></a></div>
+					</div>
+		</div>
+				<div class="texto-principal margen-interno " id="texto-principal">
+					<h1>Taller de Maquinados Castro</h1>
+					<br>
+					<br>
+					<h2>Calidad, Especialización, Innovación y Precisión</h2>
+				</div>
+			</header>
+		
+			<!-- Fin del header  -->
+			
+				<!-- Cotizacion -->
+				<div class="container-fluid h4">
+					<div class="row p-3 mb-2 bg-secondary text-white">
+						<div class="col-5">
+							Sirviendo a Toda la Republica Mexicana.
+						</div>
+						<div class="col-5">
+							Mas de 15 años de experiencia
+						</div>
+						<a href="../pagina/correo.php" class="col-sm">
+							Solicite su cotizacion.
+						</a>
+					</div>
+				</div>	
